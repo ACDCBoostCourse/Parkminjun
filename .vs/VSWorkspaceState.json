@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\ACDCBoostCourse",
-    "\\ACDCBoostCourse\\ACDCBoostCourse"
+    "\\ACDCBoostCourse\\ACDCBoostCourse",
+    "\\ACDCBoostCourse\\ACDCBoostCourse\\Section 1_준비",
+    "\\ACDCBoostCourse\\ACDCBoostCourse\\Section 1_준비\\Week 1"
   ],
-  "SelectedNode": "\\ACDCBoostCourse\\ACDCBoostCourse\\ACDCBoostCourse.vcxproj",
+  "SelectedNode": "\\ACDCBoostCourse\\ACDCBoostCourse\\Section 1_준비\\Week 1\\1주차 과제3_디버깅 툴 이용하기.cpp",
   "PreviewInSolutionExplorer": false
 }
