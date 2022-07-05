@@ -6,6 +6,7 @@ float getSequenceNumber() {
 
     for (int i = 0; i < 99; i++) {
         a /= 2;
+
     }
 
     return a;
