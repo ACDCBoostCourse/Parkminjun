@@ -1,0 +1,20 @@
+복사생성자 --> 두 포인터가 같은 값을 가리키는 얕은 복사가 일어나지 않고, 
+원본을 그대로 복사하여 완전히 새로운 객체를 만드는 생성자이다.
+
+class String {
+public:
+    String(String &rhs){
+	strData = new char[rhs.len+1];
+	strcpy(strData, rhs.strData);
+	len = rhs.len;
+}
+
+private:
+    char *strData;
+    int len;
+};
+
+int main(){
+    String s1("안녕");
+    String s2(s1); //복사 생성자 (깊은 복사)
+}

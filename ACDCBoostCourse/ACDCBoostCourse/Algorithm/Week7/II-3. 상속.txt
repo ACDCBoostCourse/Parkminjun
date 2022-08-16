@@ -1,0 +1,7 @@
+private -> 외부 접근 불가능
+protected -> 외부 접근 불가, 파생 클래스 접근가능
+public -> 어디서나 접근가능
+
+if) protected 상속
+->protected보다 접근 범위가 넓은 public은 모두 protected로 변경되어 상속
+->파생 클래스인 자손클래스에서만 접근가능하며 main함수에서는 접근 불가능
