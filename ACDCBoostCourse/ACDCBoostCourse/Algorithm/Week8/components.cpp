@@ -1,4 +1,4 @@
-#include "components.h"
+ï»¿#include "components.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -15,22 +15,22 @@ User::User(string _name, int _level, int _money, int _luck) {
 }
 
 void Warrior::attack() {
-    cout << User::name << " : °Ë ÈÖµÎ¸£±â" << endl;
+    cout << User::name << " : ê²€ íœ˜ë‘ë¥´ê¸°" << endl;
     return;
 }
 
 void Magician::attack() {
-    cout << User::name << " : ¸¶¹ý ¾²±â" << endl;
+    cout << User::name << " : ë§ˆë²• ì“°ê¸°" << endl;
     return;
 }
 
 void Archer::attack() {
-    cout << User::name << " : È° ½î±â" << endl;
+    cout << User::name << " : í™œ ì˜ê¸°" << endl;
     return;
 }
 
 void User::defend() {
-    cout << name << " : ¹æ¾î" << endl;
+    cout << name << " : ë°©ì–´" << endl;
     return;
 }
 
@@ -39,7 +39,7 @@ Item User::combinate(Item a, Item b) {
 
     if (isBurning) {
         probability = 50 + luck + 10;
-        cout << "¹ö´× ÀÌº¥Æ® Àû¿ë" << endl;
+        cout << "ë²„ë‹ ì´ë²¤íŠ¸ ì ìš©" << endl;
     }
     else {
         probability = 50 + luck;
@@ -50,12 +50,12 @@ Item User::combinate(Item a, Item b) {
     srand(time(NULL));
 
     if (rand() % 100 + 1 <= probability) {
-        cout << "Á¶ÇÕ ¼º°ø!" << endl;
+        cout << "ì¡°í•© ì„±ê³µ!" << endl;
         return a + b;
     }
     else {
-        cout << "Á¶ÇÕ ½ÇÆÐ!" << endl;
-        return Item("Á¶ÇÕ ½ÇÆÐ ¾ÆÀÌÅÛ", 0);
+        cout << "ì¡°í•© ì‹¤íŒ¨!" << endl;
+        return Item("ì¡°í•© ì‹¤íŒ¨ ì•„ì´í…œ", 0);
     }
 }
 
@@ -67,7 +67,7 @@ Item::Item(string _name, int _performance) {
 Item Item::operator+(Item& item) {
     Item::performance = Item::performance + item.getPerformance();
 
-    return Item("Á¶ÇÕ ¼º°ø ¾ÆÀÌÅÛ", Item::performance);
+    return Item("ì¡°í•© ì„±ê³µ ì•„ì´í…œ", Item::performance);
 }
 
 int Item::getPerformance() {
